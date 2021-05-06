@@ -7,5 +7,14 @@
 }
 
 #headerBox{
-	background-color: grey;
+	background-color: white;
+}
+.menuButton{
+	width: 2%;
+	height: 3px;
+	background-color: black;
+	margin: 6px 0;
+	position: relative;
+  left: 97%;
+  top: 6px;
 }
