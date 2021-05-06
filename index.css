@@ -1,3 +1,11 @@
-#header{
-	color:red;
+#name{
+	font-family: -webkit-pictograph;
+	text-align: center;
+	position: relative;
+	top: 10px;
+	height: 50px;
+}
+
+#headerBox{
+	background-color: grey;
 }
