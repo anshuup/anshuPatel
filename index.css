@@ -1,20 +1,24 @@
-#name{
-	font-family: -webkit-pictograph;
-	text-align: center;
-	position: relative;
-	top: 10px;
-	height: 50px;
+body{
+	background-color: #f7e1d1;
 }
 
-#headerBox{
-	background-color: white;
+#name{
+	font-family: -webkit-pictograph;
+	width: fit-content;
+	margin: auto;
+	font-size: 150%;
 }
-.menuButton{
-	width: 2%;
-	height: 3px;
-	background-color: black;
-	margin: 6px 0;
-	position: relative;
-  left: 97%;
-  top: 6px;
+.menuList{
+	font-family: -webkit-pictograph;
+	position: fixed;
+	top: 35%;
+	left: 15%;
+	text-align: right;
+	width: fit-content;
+}
+.menu:hover{
+	color: red;
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: all 500ms;
 }
