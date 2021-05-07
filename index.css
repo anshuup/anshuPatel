@@ -1,0 +1,24 @@
+body{
+	background-color: #f7e1d1;
+}
+
+#name{
+	font-family: -webkit-pictograph;
+	width: fit-content;
+	margin: auto;
+	font-size: 150%;
+}
+.menuList{
+	font-family: -webkit-pictograph;
+	position: fixed;
+	top: 35%;
+	left: 15%;
+	text-align: right;
+	width: fit-content;
+}
+.menu:hover{
+	color: red;
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: all 500ms;
+}
