@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://anshuup.github.io/index.css">
+    <title> Anshu Patel </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
-    <div class="menuList">
-      <h3 id="name"> Anshu Patel </h3>
-      <div id ="aboutMeMenu" class="menu">About Me</div>
-      <div id ="courseMenu" class="menu">Courses</div>
-      <div id ="experienceMenu" class="menu">Experience</div>
-      <div id ="projectsMenu" class="menu">Projects</div>
-      <div id ="contactMenu" class="menu">Contact</div>
-    </div>
-</body>
+    <img id="backImage" src="https://images.unsplash.com/photo-1445331552301-94139f242587?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+      <div class="menuList">
+        <div id="home" class="menu" onclick="location.href='#homeInfo'">Home </div>
+        <div id ="aboutMe" class="menu" onclick="location.href='#aboutInfo'">About</div>
+        <div id ="resume" class="menu">Resume</div>
+        <div id ="experienceMenu" class="menu">Experience</div>
+        <div id ="projectsMenu" class="menu">Projects</div>
+        <div id ="contactMenu" class="menu">Contact</div>
+      </div>
+
+      <div id="homeInfo">
+        <div id="name"> Anshu Patel </div>
+        <div id="icon">
+          <a href = "https://www.linkedin.com/in/anshuptl" target="_blank">
+            <i class="fa fa-linkedin-square" id="linkedin"></i>
+          </a>
+          <a href = "https://github.com/anshuup" target="_blank">
+            <i class="fa fa-github" id="github"></i>
+          </a>
+          <a href="mailto:anshupatel199@gmail.com" target="_blank">
+            <i class="fa fa-envelope" id = "mail"></i>
+          </a>
+        </div>
+      </div>
+    </img>
+  </body>
 </html>

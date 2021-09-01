@@ -1,23 +1,88 @@
 body{
-	background-color: #f7e1d1;
-}
-#name{
-	font-family: -webkit-pictograph;
-	width: fit-content;
-	margin: auto;
-	font-size: 150%;
+	margin:unset;
+	background-color: black;
 }
 .menuList{
 	font-family: -webkit-pictograph;
-	position: fixed;
-	top: 35%;
-	left: 15%;
-	text-align: right;
-	width: fit-content;
+	position: absolute;
+	top: 5%;
+	color: white;
+	font-weight: bolder;
+	width: 100%;
+	text-align: center;
+}
+.menu{
+	display: inline;
+	margin-left: 2%;
 }
 .menu:hover{
-	color: red;
+	color: #b4326c;
 	cursor: pointer;
 	transform: scale(1.2);
 	transition: all 500ms;
+	-webkit-transition: color 1s;
+}
+#homeInfo{
+	font-family: -webkit-pictograph;
+	position: absolute;
+	color: white;
+	top: 32%;
+	font-size: 400%;
+	font-weight: bolder;
+	width: 100%;
+}
+#backImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+#name{
+	width: 100%;
+	text-align: center;
+}
+#linkedin{
+	font-size: 55%;
+  color: white;
+  position: absolute;
+	top: 386%;
+}
+#github{
+	font-size: 55%;
+	color: white;
+	position: absolute;
+	top: 386%;
+	margin-left: 4%;
+}
+#mail{
+	font-size: 55%;
+	color: white;
+	position: absolute;
+	top: 386%;
+	margin-left: 8%;
+}
+#linkedin:hover{
+	color: #b4326c;
+	cursor: pointer;
+	-webkit-transition: color 0.7s;
+}
+#github:hover{
+	color:#b4326c;
+	cursor: pointer;
+	-webkit-transition: color 0.7s;
+}
+#mail:hover{
+	color: #b4326c;
+	cursor: pointer;
+	-webkit-transition: color 0.7s;
+}
+#icon{
+	position: relative;
+	text-align: center;
+	margin-left: -12%;
+}
+#aboutInfo{
+	color: white;
 }
