@@ -2,37 +2,116 @@
 <html>
   <head>
     <title> Anshu Patel </title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./ProjectCss/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
-    <img id="backImage" src="https://images.unsplash.com/photo-1445331552301-94139f242587?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-      <div id="homeInfo">
-        <h1 id="name"> Anshu Patel </h1>
-        <ul id="icon">
-          <li class="iconList">
-            <a href = "https://www.linkedin.com/in/anshuptl" target="_blank">
-              <i class="fa fa-linkedin-square" id="linkedin"></i>
-            </a>
-          </li>
-          <li class="iconList">
-            <a href = "https://github.com/anshuup" target="_blank">
-              <i class="fa fa-github" id="github"></i>
-            </a>
-          </li>
-          <li class="iconList">
-            <a href="mailto:anshupatel199@gmail.com" target="_blank">
-              <i class="fa fa-envelope" id = "mail"></i>
-            </a>
-          </li>
-          <li class="iconList">
-            <a href="https://anshuup.github.io/Anshu_Patel_Resume.pdf" target="_blank">
-              <i class="fa fa-file-text-o" id="resume"></i>
-            </a>
-          </li>
-        </ul>
+  <body id="indexBody" onload="highLightHome();populateSkills();populateInterest();typeWriter()">
+
+    <div class="menuList" id="menus">
+      <a id ="homeMenu" class="menu" href="/">About</a>
+      <a id ="experienceMenu" class="menu" href="./exp.html">Experience</a>
+      <a id ="projectsMenu" class="menu" href="./projects.html">Projects</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction('home')">
+        <i class="bMenu fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="hamMenuHome">
+      <a id ="homeMenu1" class="menu1" href="/">About</a>
+      <a id ="experienceMenu1" class="menu1" href="./exp.html">Experience</a>
+      <a id ="projectsMenu1" class="menu1" href="./projects.html">Projects</a>
+    </div>
+
+    <div id="imgSection">
+      <img id="backImage" src="./polygon-scatter-haikei.png">
+      <div id="infoSection">
+        <div id="name"> </div>
+        <div id="locInfo">
+          <i class='mapIcon fa fa-map-marker'></i>
+          <span id="loc">Toronto, ON, Canada </span>
+        </div>
+        <div id="workInfo">
+          <i class="workIcon fa fa-briefcase" style="color:#e57255"></i>
+          <span id="workTitle" style="color:#e57255">Programmer </span>
+        </div>
+        <div id="personalInfo">
+          <a href="https://www.linkedin.com/in/anshuptl/" target="_blank" id="linkedinIconLink" class="iconLink"><i class="linkedinIcon fa fa-linkedin-square" id="linkedin" title="Linkedin"></i></a>
+          <a href="https://github.com/anshuup" target="_blank" id="gitHubIconLink" class="iconLink"><i class="gitHubIcon fa fa-github" id="github" title="GitHub"></i></a>
+          <a href="mailto:anshupatel199@gmail.com" id="mailIconLink" class="iconLink"><i class="mailIcon fa fa-envelope" id = "mail" title="Mail"></i></a>
+          <a href="https://anshuup.github.io/Anshu_Patel_Resume.pdf" target="_blank" id="resumeIconLink" class="iconLink"><i class="resumeIcon fa fa-file-pdf-o" title="Resume"></i></a>
+        </div>
       </div>
-    </img>
+    </div>
+
+    <div id="twoColumns">
+      <div id="skillsSection" style="text-align:center">
+        <h1 id="skillTitle" style="color:white;text-align:center">Skills</h1>
+      </div>
+      <div id="interests" style="text-align:center">
+        <h1 id="skillTitle" style="color:white;text-align:center">Interest</h1>
+      </div>
+    </div>
+      <!--
+      <div id="homeInfo">
+        <h3 id="name"> Anshu Patel </h3>
+        <div id="icon">
+          <a href = "https://www.linkedin.com/in/anshuptl" target="_blank" style="text-decoration:none" title="linkedin" id="linkedinLink">
+            <i class="fa fa-linkedin-square" id="linkedin"></i>
+          </a>
+          <a href = "https://github.com/anshuup" target="_blank" style="text-decoration:none" id="githubLink">
+            <i class="fa fa-github" id="github"></i>
+          </a>
+          <a href="mailto:anshupatel199@gmail.com" target="_blank" style="text-decoration:none" id="mailLink">
+            <i class="fa fa-envelope" id = "mail"></i>
+          </a>
+        </div>
+      </div>
+    -->
+    <!--
+    <div id="aboutInfo">
+      <h4 id="about">About</h4>
+      <p id="myinfo"> I graduated from Carleton University in April 2022 with major in Computer Science and minor in Statistics. I am currently employed
+          for the Canadian Food Inspection Agency (CFIA) as a Programmer.</p>
+      <div id="column1" class="column">
+          <h7 class="profile" >More about me</h7>
+
+          <div id="nameText">
+            <h7 id="nameTextHeader"> Name : </h7>
+            <h7 id="name1" style="display:block"> Anshu Patel </h7>
+          </div>
+          <div id="emailText">
+            <h7 id="emailTextHeader"> Email : </h7>
+            <a href="mailto:anshupatel199@gmail.com" target="_blank "id="email1" style="display:block;text-decoration:none"> anshupatel199@gmail.com </a>
+          </div>
+          <div id="schoolText">
+            <h7 id="schoolTextHeader"> School : </h7>
+            <h7 id="school1" style="display:block;text-decoration:none"> Carleton University </h7>
+          </div>
+          <div id="degreeText">
+            <h7 id="degreeTextHeader"> Degree : </h7>
+            <h7 id="degree1" style="display:block;text-decoration:none"> Bachelor of Computer Science Major & Minor in Statistics </h7>
+          </div>
+        </div>
+
+      <div id="column2" class="column">
+        <h7 class="text" >Skills</h7>
+        <div class="skills"></div>
+      </div>
+    </div>
+
+    <div id="expInfo">
+      <h4 id="exp">Work Experience</h4>
+      <div id="column1Exp"></div>
+      <div id="column2Exp"></div>
+    </div>
+
+    <div id="projectsInfo">
+      <h4 id="projectHeader">Projects</h4>
+      <div id="cardsList"></div>
+    </div>
+  -->
   </body>
 </html>

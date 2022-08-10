@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Anshu Patel </title>
+    <link rel="stylesheet" href="./ProjectCss/proj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="index.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body onload="highLightProjects();addProjects()" id="projectsBody">
+
+        <div class="menuList" id="menus">
+          <a id ="homeMenu" class="menu" href="/">About</a>
+          <a id ="experienceMenu" class="menu" href="./exp.html">Experience</a>
+          <a id ="projectsMenu" class="menu" href="./projects.html">Projects</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction('exp')">
+            <i class="bMenu fa fa-bars"></i>
+          </a>
+        </div>
+
+        <div id="hamMenuHome">
+          <a id ="homeMenu1" class="menu1" href="/">About</a>
+          <a id ="experienceMenu1" class="menu1" href="./exp.html">Experience</a>
+          <a id ="projectsMenu1" class="menu1" href="./projects.html">Projects</a>
+        </div>
+
+        <div id="projectsInfo">
+          <h1 style="text-align:center;color:#da6c53;margin-top:0px"> Projects </h1>
+          <div id="cardsList"></div>
+        </div>
+  </body>
+</html>
