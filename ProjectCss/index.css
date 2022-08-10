@@ -1,0 +1,1997 @@
+html{
+	scroll-behavior: smooth;
+	font-family: system-ui;
+}
+body{
+	margin:0px;
+}
+.button {
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 9px;
+	transition: transform .2s;
+	font-weight: bold;
+}
+
+.button:hover {
+	background-color: #f1f1f1;
+	transform: scale(1.1)
+}
+
+@media screen and (max-width: 300px) {
+	.menuList{
+		position: relative;
+		background-color: black;
+		height: 3em;
+		margin-left: 1%;
+		margin-right: 1%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	.menu{
+		display: none;
+	}
+	.bMenu{
+		font-size: 2.5em !important;
+    padding: 3px;
+    float: right;
+    color: white;
+		padding-right: 10px;
+	}
+	.bMenu:hover{
+		color: #e94f64;
+	}
+	#imgSection{
+		/*height: 65vh;*/
+		width: 98%;
+		position: relative;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+	}
+	#name{
+		color: #52d273;
+		text-align: center;
+		font-size: 7vw;
+		margin: 0px;
+		font-weight: 500;
+	}
+	.mapIcon{
+		color: #e5c355;
+	}
+	#loc{
+		color: #e5c355;
+	}
+	#locInfo{
+		text-align: center;
+		font-size: 3vw;
+	}
+
+	.workIcon{
+		color: white;
+	}
+	#workTitle{
+		color: white;
+	}
+	#workInfo{
+		text-align: center;
+		font-size: 3vw;
+	}
+
+
+	.linkedinIcon{
+		padding-right: 0.4vw;
+	}
+	.gitHubIcon{
+		padding-right: 0.4vw;
+	}
+	.mailIcon{
+		padding-right: 0.4vw;
+	}
+	.resumeIcon{
+		padding-right: 0.4vw;
+	}
+	#personalInfo{
+		text-align: center;
+		font-size: 3vw;
+		color: white;
+		position: relative;
+		top: 4vh;
+	}
+	#backImage{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		/*height: 65vh;*/
+		box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.87);
+		border-radius: 2px;
+	}
+	#infoSection{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.iconLink{
+		color: white;
+	}
+	#linkedinIconLink{
+		color:#46bddf;
+	}
+	#linkedinIconLink:hover{
+		color:white;
+	}
+	#gitHubIconLink{
+		color:#52d273;
+	}
+	#gitHubIconLink:hover{
+		color:white;
+	}
+	#mailIconLink{
+		color:#e94f64;
+	}
+	#mailIconLink:hover{
+		color:white;
+	}
+	#resumeIconLink{
+		color:#e57255;
+	}
+	#resumeIconLink:hover{
+		color:white;
+	}
+	#skillsSection{
+		height: auto; /*25vw;*/
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    background-color: #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+		padding-bottom:3%;
+		border-radius: 2px;
+		min-height: 25vw;
+	}
+	#interests{
+		height: auto;
+    width: 98%;
+    margin-top: 1%;
+    background-color: #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+    margin-bottom: 5%;
+		margin-left: 1%;
+		padding-bottom:3%;
+		min-height: 25vw;
+		border-radius: 2px;
+	}
+	#skillTitle{
+		font-size: 4.5vw;
+	}
+	#hamMenuHome{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		height: auto;
+		display: grid;
+		background-color: black;
+		align-content: space-evenly;
+		text-align: center;
+		display: none;
+	}
+
+	.menu1{
+		border-width: 0.2px;
+		text-decoration: none;
+		padding-top: 5px;
+		padding-bottom: 7px;
+		font-weight: 500;
+		color: white;
+		border-top-style: solid;
+		border-width: 1px;
+	}
+	.menu1:hover{
+		background-color: #ff6961;
+	}
+	#homeMenu1{
+		background-color: #e5c453
+	}
+}
+@media screen and (min-width: 300px) {
+	.menuList{
+		position: relative;
+		background-color: black;
+		height: 3em;
+		margin-left: 1%;
+		margin-right: 1%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	.menu{
+		display: none;
+	}
+	.bMenu{
+		font-size: 2.5em !important;
+    padding: 3px;
+    float: right;
+    color: white;
+		padding-right: 10px;
+	}
+	.bMenu:hover{
+		color: #e94f64;
+	}
+	#imgSection{
+		/*height: 65vh;*/
+		position: relative;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top:1%;
+		width: 98%;
+	}
+	#name{
+		color: #52d273;
+		text-align: center;
+		font-size: 7vw;
+		margin: 0px;
+		font-weight: 500;
+	}
+	.mapIcon{
+		color: #e5c355;
+	}
+	#loc{
+		color: #e5c355;
+	}
+	#locInfo{
+		text-align: center;
+		font-size: 3vw;
+	}
+
+	.workIcon{
+		color: white;
+	}
+	#workTitle{
+		color: white;
+	}
+	#workInfo{
+		text-align: center;
+		font-size: 3vw;
+	}
+
+
+	.linkedinIcon{
+		padding-right: 0.4vw;
+
+	}
+	.gitHubIcon{
+		padding-right: 0.4vw;
+
+	}
+	.mailIcon{
+		padding-right: 0.4vw;
+
+	}
+	.resumeIcon{
+		padding-right: 0.4vw;
+
+	}
+	#personalInfo{
+		text-align: center;
+		font-size: 3vw;
+		color: white;
+		position: relative;
+		top: 4vh;
+	}
+	#backImage{
+		position: relative;
+		text-align: center;
+		width: 100%;
+	/*	height: 65vh;*/
+		box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.87);
+		border-radius: 2px;
+	}
+	#infoSection{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.iconLink{
+		color: white;
+	}
+	#linkedinIconLink{
+		color:#46bddf;
+	}
+	#linkedinIconLink:hover{
+		color:white;
+	}
+	#gitHubIconLink{
+		color:#52d273;
+	}
+	#gitHubIconLink:hover{
+		color:white;
+	}
+	#mailIconLink{
+		color:#e94f64;
+	}
+	#mailIconLink:hover{
+		color:white;
+	}
+	#resumeIconLink{
+		color:#e57255;
+	}
+	#resumeIconLink:hover{
+		color:white;
+	}
+	#skillsSection{
+		/*height: 25vw;*/
+		height: auto;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    background-color:  #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+		padding-bottom:3%;
+		border-radius: 2px;
+		min-height: 25vw;
+
+	}
+	#interests{
+		height: auto;
+    width: 98%;
+    margin-top: 1%;
+    background-color:  #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+    margin-bottom: 5%;
+		margin-left: 1%;
+		padding-bottom:3%;
+		min-height: 25vw;
+		border-radius: 2px;
+
+	}
+	#skillTitle{
+		font-size: 4.5vw;
+	}
+	#hamMenuHome{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		height: auto;
+		display: grid;
+		background-color: black;
+		align-content: space-evenly;
+		text-align: center;
+		display: none;
+	}
+	.menu1{
+		border-width: 0.2px;
+		text-decoration: none;
+		padding-top: 5px;
+		padding-bottom: 7px;
+		font-weight: 500;
+		color: white;
+		border-top-style: solid;
+		border-width: 1px;
+	}
+	.menu1:hover{
+		background-color: #ff6961;
+	}
+	#homeMenu1{
+		background-color: #e5c453
+	}
+}
+@media screen and (min-width: 600px) {
+	.menuList{
+		position: relative;
+		background-color: black;
+		height: 3em;
+		margin-left: 1%;
+		margin-right: 1%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	.menu{
+		display: none;
+	}
+	.bMenu{
+		font-size: 2.5em !important;
+    padding: 3px;
+    float: right;
+    color: white;
+		padding-right: 10px;
+	}
+	.bMenu:hover{
+		color: #e94f64;
+	}
+	#imgSection{
+		/*height: 65vh;*/
+		position: relative;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		width: 98%;
+
+	}
+	#name{
+		color: #52d273;
+		text-align: center;
+		font-size: 7vw;
+		margin: 0px;
+		font-weight: 500;
+
+	}
+	.mapIcon{
+		color: #e5c355;
+	}
+	#loc{
+		color: #e5c355c;
+	}
+	#locInfo{
+		text-align: center;
+		font-size: 3vw;
+
+	}
+
+	.workIcon{
+		color: white;
+	}
+	#workTitle{
+		color: white;
+	}
+	#workInfo{
+		text-align: center;
+		font-size: 3vw;
+	}
+
+
+	.linkedinIcon{
+		padding-right: 0.4vw;
+
+	}
+	.gitHubIcon{
+		padding-right: 0.4vw;
+
+	}
+	.mailIcon{
+		padding-right: 0.4vw;
+
+	}
+	.resumeIcon{
+		padding-right: 0.4vw;
+
+	}
+	#personalInfo{
+		text-align: center;
+		font-size: 3vw;
+		color: white;
+		position: relative;
+		top: 4vh;
+	}
+	#backImage{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		/*height: 65vh;*/
+		box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.87);
+		border-radius: 2px;
+	}
+	#infoSection{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.iconLink{
+		color: white;
+	}
+	#linkedinIconLink{
+		color:#46bddf;
+	}
+	#linkedinIconLink:hover{
+		color:white;
+	}
+	#gitHubIconLink{
+		color:#52d273;
+	}
+	#gitHubIconLink:hover{
+		color:white;
+	}
+	#mailIconLink{
+		color:#e94f64;
+	}
+	#mailIconLink:hover{
+		color:white;
+	}
+	#resumeIconLink{
+		color:#e57255;
+	}
+	#resumeIconLink:hover{
+		color:white;
+	}
+	#skillsSection{
+		/*height: 25vw;*/
+		height: auto;
+    width: 98%;
+    margin-left: 1%;
+    background-color:  #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+		padding-bottom:3%;
+		margin-top: 1%;
+		border-radius: 2px;
+		min-height: 25vw;
+
+	}
+	#interests{
+		height: auto;
+    width: 98%;
+    margin-top: 1%;
+    background-color:  #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+    margin-bottom: 5%;
+		padding-bottom:3%;
+		min-height: 25vw;
+		border-radius: 2px;
+
+	}
+	#skillTitle{
+		font-size: 4.5vw;
+	}
+
+
+	#hamMenuHome{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		height: auto;
+		display: grid;
+		background-color: black;
+		align-content: space-evenly;
+		text-align: center;
+		display: none;
+	}
+	.menu1{
+		border-width: 0.2px;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-weight: 500;
+    color: white;
+		border-top-style: solid;
+		border-width: 1px;
+	}
+	.menu1:hover{
+		background-color: #ff6961;
+	}
+	#homeMenu1{
+		background-color: #e5c453
+	}
+}
+@media screen and (min-width: 900px) {
+	.menuList{
+		position: relative;
+    background-color: black;
+    text-align: end;
+		padding-right: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	#homeMenu:hover{
+		color: #46bddf !important;
+		border-bottom-style: solid;
+	}
+	#experienceMenu:hover{
+		color: #52d273 !important;
+		border-bottom-style: solid;
+	}
+	#projectsMenu:hover{
+		color: #e57255 !important;
+		border-bottom-style: solid;
+	}
+	.menu{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		color:white;
+		padding: 0.7em;
+		transition: all 0.8s ease;
+	}
+	.icon{
+		display: none;
+	}
+	#imgSection{
+		height: 65vh;
+		width: 80vw;
+		position: relative;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 1%;
+	}
+	#name{
+		color: #52d273;
+		text-align: center;
+		font-size: 7vw;
+		margin: 0px;
+		font-weight: 500;
+
+	}
+	.mapIcon{
+    color: #e5c355;
+	}
+	#loc{
+		color: #e5c355;
+	}
+	#locInfo{
+		text-align: center;
+		font-size: 2vw;
+	}
+
+	.workIcon{
+		color: white;
+	}
+	#workTitle{
+		color: white;
+	}
+	#workInfo{
+		text-align: center;
+		font-size: 2vw;
+
+	}
+
+
+	.linkedinIcon{
+		padding-right: 0.4vw;
+
+	}
+	.gitHubIcon{
+		padding-right: 0.4vw;
+
+	}
+	.mailIcon{
+		padding-right: 0.4vw;
+
+	}
+	.resumeIcon{
+		padding-right: 0.4vw;
+
+	}
+	#personalInfo{
+		text-align: center;
+		font-size: 2vw;
+		color: white;
+		position: relative;
+		top: 4vh;
+	}
+	#backImage{
+		position: relative;
+		text-align: center;
+		width: 80vw;
+		height: 65vh;
+		box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.87);
+		border-radius: 2px;
+	}
+	#infoSection{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.iconLink{
+		color: white;
+	}
+	#linkedinIconLink{
+		color:#46bddf;
+	}
+	#linkedinIconLink:hover{
+		color:white;
+	}
+	#gitHubIconLink{
+		color:#52d273;
+	}
+	#gitHubIconLink:hover{
+		color:white;
+	}
+	#mailIconLink{
+		color:#e94f64;
+	}
+	#mailIconLink:hover{
+		color:white;
+	}
+	#resumeIconLink{
+		color:#e57255;
+	}
+	#resumeIconLink:hover{
+		color:white;
+	}
+	#skillsSection{
+    /*height: 25vw;*/
+		min-height: 25vw;
+    width: 39vw;
+    margin-left: 10%;
+    margin-top: 1%;
+    background-color:  #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+		margin-bottom: 5%;
+		margin-right: 1%;
+		border-radius: 2px;
+
+	}
+	#interests{
+		min-height: 25vw;
+		width: 39vw;
+		margin-top:1%;
+		background-color:  #212121;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+		float: left;
+		margin-bottom: 5%;
+		border-radius: 2px;
+
+	}
+	#skillTitle{
+		font-size: 2.5vw;
+	}
+	#hamMenuHome{
+		display: none !important;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.menuList{
+		position: relative;
+    background-color: black;
+    height: 3em;
+    text-align: end;
+		padding-right: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	#homeMenu:hover{
+		color: #46bddf !important;
+		border-bottom-style: solid;
+	}
+	#experienceMenu:hover{
+		color: #52d273 !important;
+		border-bottom-style: solid;
+	}
+	#projectsMenu:hover{
+		color: #e57255 !important;
+		border-bottom-style: solid;
+	}
+	.menu{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		transition: all 0.8s ease;
+		color:white;
+		padding: 0.7em;
+	}
+	.icon{
+		display: none;
+	}
+	#imgSection{
+		height: 65vh;
+		width: 80vw;
+		position: relative;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 1%;
+	}
+	#name{
+		color: #52d273;
+		text-align: center;
+		font-size: 7vw;
+		margin: 0px;
+		font-weight: 500;
+
+	}
+	.mapIcon{
+    color: #e5c355;
+	}
+	#loc{
+		color: #e5c355;
+	}
+	#locInfo{
+		text-align: center;
+		font-size: 2vw;
+	}
+
+	.workIcon{
+		color: white;
+	}
+	#workTitle{
+		color: white;
+	}
+	#workInfo{
+		text-align: center;
+		font-size: 2vw;
+	}
+
+
+	.linkedinIcon{
+		padding-right: 0.4vw;
+
+	}
+	.gitHubIcon{
+		padding-right: 0.4vw;
+
+	}
+	.mailIcon{
+		padding-right: 0.4vw;
+
+	}
+	.resumeIcon{
+		padding-right: 0.4vw;
+
+	}
+	#personalInfo{
+		text-align: center;
+		color: white;
+		font-size: 2vw;
+		position: relative;
+		top: 4vh;
+	}
+	#backImage{
+		position: relative;
+		text-align: center;
+		width: 80vw;
+		height: 65vh;
+		box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.87);
+		border-radius: 2px;
+	}
+	#infoSection{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.iconLink{
+		color: white;
+	}
+	#linkedinIconLink{
+		color:#46bddf;
+	}
+	#linkedinIconLink:hover{
+		color:white;
+	}
+	#gitHubIconLink{
+		color:#52d273;
+	}
+	#gitHubIconLink:hover{
+		color:white;
+	}
+	#mailIconLink{
+		color:#e94f64;
+	}
+	#mailIconLink:hover{
+		color:white;
+	}
+	#resumeIconLink{
+		color:#e57255;
+	}
+	#resumeIconLink:hover{
+		color:white;
+	}
+
+	#skillsSection{
+    /*height: 25vw;*/
+		min-height: 25vw;
+    width: 39vw;
+    margin-left: 10%;
+    margin-top: 1%;
+    background-color:  #212121;
+    box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    float: left;
+		margin-bottom: 5%;
+		margin-right: 1%;
+		border-radius: 2px;
+
+	}
+	#interests{
+		min-height: 25vw;
+		width: 39vw;
+		margin-top:1%;
+		background-color:  #212121;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+		float: left;
+		margin-bottom: 5%;
+		border-radius: 2px;
+
+	}
+	#skillTitle{
+		font-size: 2.5vw;
+	}
+	#hamMenuHome{
+		display: none !important;
+	}
+
+/*
+	#toolTipText {
+		visibility: hidden;
+    background-color: black;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 40.2%;
+    top: 81%;
+    padding: 0.2em;
+    font-family: system-ui;
+    font-size: 0.4em;
+	}
+	.linkedinIcon:hover #toolTipText {
+  	visibility: visible;
+	}*/
+}
+/**
+#homeInfo{
+	color: white;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	position: absolute;
+	top: 45%;
+}
+#icon{
+	text-align: center;
+}
+#name{
+	text-align: center;
+	margin:0;
+	font-size: 380%;
+}
+#linkedin, #github, #mail{
+	color: white;
+	text-decoration: none;
+	padding-right: 0.2%;
+	font-size: 200%;
+
+}
+#linkedin:hover, #github:hover, #mail:hover{
+	color: #b4326c;
+	cursor: pointer;
+	-webkit-transition: color 0.2s;
+}
+#aboutInfo{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 101%;
+}
+#c1 {
+	position: absolute;
+	top: 15%;
+  width: 60%;
+	margin-left: 1%;
+}
+#c2{
+	width: 38%;
+	position: absolute;
+	top: 15%;
+	right: 0%;
+}
+.text{
+	color:white
+}
+.progress-bar-container {
+	font-family:  sans-serif;
+	color: #eee;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	width: 65%;
+}
+.progress-bar {
+	width: 90%;
+	height: 5px;
+	border-radius: 5px;
+	background-color: lightgrey !important;
+}
+.percentage {
+	display: block;
+	height: 100%;
+	background-color: rgb(180, 50, 108);
+	border-radius: 5px;
+	animation: progress 1500ms ease-in 1;
+}
+
+
+@keyframes progress {
+	from {
+		width: 0;
+	}
+}
+.pt{
+	float: right;
+  margin-right: 10%;
+	font-size: 75%;
+	color: black;
+}
+#expInfo{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 201%;
+}
+
+#about{
+	position: absolute;
+  text-align: center;
+  width: 100%;
+	color: #b4326c;
+}
+#exp{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: #b4326c;
+}
+#column1{
+	position: absolute;
+	border-color: #b4326c;
+	border-width: 2px;
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+#nameTextHeader, #emailTextHeader, #schoolTextHeader, #degreeTextHeader{
+	color:#b4326c;
+}
+#column2{
+	width: 48%;
+	float: right;
+	position: relative;
+}
+.text{
+	color: #b4326c;
+	font-weight: bold;
+}
+
+.profile{
+	color: #b4326c;
+	font-weight: bold;
+	position: absolute;
+	left: 45%;
+	top: -3%;
+}
+
+#projectHeader{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: #b4326c;
+	top: 9%;
+}
+#cardsList{
+  display: flex;
+  margin: 110px;
+  flex-wrap: wrap;
+}
+
+
+.card:hover{
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+#container1, #container2, #container3, #container4, #container5 {
+  padding: 2px 16px;
+}
+
+
+@media screen and (max-width:400px) {
+	.text{
+		color: #b4326c;
+		font-weight: bold;
+		text-align: center;
+		position: relative;
+		left: 42%;
+	}
+}
+
+@media screen and (max-width:600px){
+	#about{
+		top:8%;
+	}
+	#myinfo{
+		position: relative;
+		top: 14%;
+		width: 60%;
+		left: 21%;
+		text-align: center;
+	}
+	#column1{
+		position: relative;
+		top: 15%;
+		text-align: center;
+		width: 100%;
+	}
+	#column2{
+		width: 95%;
+		position: relative;
+		top: 20%;
+	}
+	.skills{
+		position: relative;
+		width: 100%;
+	}
+	.progress-bar-container{
+		font-family: sans-serif;
+    color: #eee;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+		width: 100%;
+	}
+	#nameText,#emailText,#schoolText,#degreeText{
+		position: relative;
+		left: 0%;
+		top: 2%;
+	}
+	#emailText{
+		top: 5%;
+	}
+	#schoolText{
+		top: 10%;
+	}
+	#degreeText{
+		top: 15%;
+	}
+	#exp{
+		top:8%;
+	}
+	#expInfo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 255%;
+	}
+
+	#column1Exp{
+		width: 75%;
+		position: relative;
+		border-left-style: solid;
+		height: 75%;
+		top: 20%;
+		border-width: 2px;
+		border-color:#b4326c;
+		left: 10%;
+		font-size: 75%;
+	}
+	#workTitle1{
+		position: absolute;
+		left: 10%;
+		color: #b4326c;
+		top: 4%;
+	}
+	#workPeriod1{
+		position: absolute;
+    left: 10%;
+    top: 8%;
+	}
+	#workIcon1{
+		width: 18%;
+    height: 13%;
+    position: absolute;
+    left: -9%;
+	}
+	#workTitle2{
+		position: absolute;
+    left: 10%;
+    color: #b4326c;
+    top: 38%;
+	}
+	#workPeriod2{
+		position: absolute;
+    left: 10%;
+    top: 43%;
+	}
+	#workIcon2{
+		width: 18%;
+		height: 13%;
+		position: absolute;
+		top: 34%;
+		left: -9%;
+	}
+	#workIcon3{
+		width: 18%;
+		height: 13%;
+		position: absolute;
+		top: 66.5%;
+		left: -9%;
+	}
+	#workTitle3{
+		position: absolute;
+		left: 10%;
+		color: #b4326c;
+		top: 71%;
+		text-align: right;
+	}
+	#workPeriod3{
+		position: absolute;
+		left: 10%;
+		top: 76%;
+	}
+
+	#column2Exp{
+		width: 75%;
+	}
+	#workCompany1{
+		position: absolute;
+		top: 30%;
+		left: 17.5%;
+		color: #b4326c;
+	}
+	#workDesc1{
+		position: absolute;
+		top: 33%;
+		left: 17.5%;
+	}
+
+	#workCompany2{
+		position: absolute;
+    top: 56%;
+		left: 17.5%;
+    color: #b4326c;
+	}
+	#workDesc2{
+		position: absolute;
+    top: 59%;
+		left: 17.5%;
+	}
+
+	#workCompany3{
+		position: absolute;
+    top: 80%;
+		left: 17.5%;
+    color: #b4326c;
+	}
+	#workDesc3{
+		position: absolute;
+		top: 83%;
+		left: 17.5%;
+	}
+	.card{
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+		width: 100%;
+	  position: absolute;
+		margin:17px;
+	}
+	#projectsInfo{
+		height: 125%;
+		width: 100%;
+		position: absolute;
+		top: 355%;
+	}
+}
+
+
+@media only screen and (min-width:600px){
+	#about{
+		top:8%;
+	}
+	#myinfo{
+		position: relative;
+		top: 14%;
+		width: 60%;
+		left: 21%;
+		text-align: center;
+	}
+	#column1{
+		position: relative;
+		top: 15%;
+		text-align: center;
+		width: 100%;
+	}
+	#column2{
+		position: relative;
+		top: 18%;
+		width: 100%;
+	}
+	.text{
+		position: relative;
+	}
+	.skills{
+		position: relative;
+		width: 65%;
+	}
+	.progress-bar-container{
+		font-family: sans-serif;
+    color: #eee;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+		width: 100%;
+	}
+	#nameText,#emailText,#schoolText,#degreeText{
+		position: relative;
+		left: 0%;
+		top: 2%;
+	}
+	#emailText{
+		top: 5%;
+	}
+	#schoolText{
+		top: 10%;
+	}
+	#degreeText{
+		top: 15%;
+	}
+	#exp{
+		top:8%;
+	}
+	#expInfo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 255%;
+	}
+	#column1Exp{
+		width: 75%;
+		position: relative;
+		border-left-style: solid;
+		height: 75%;
+		top: 20%;
+		border-width: 2px;
+		border-color:#b4326c;
+		left: 10%;
+		font-size: 75%;
+	}
+	#workTitle1{
+		position: absolute;
+		left: 10%;
+		color: #b4326c;
+		top: 4%;
+	}
+	#workPeriod1{
+		position: absolute;
+		left: 10%;
+		top: 8%;
+	}
+	#workIcon1{
+		width: 18%;
+		height: 13%;
+		position: absolute;
+		left: -9%;
+	}
+	#workTitle2{
+		position: absolute;
+		left: 10%;
+		color: #b4326c;
+		top: 38%;
+	}
+	#workPeriod2{
+		position: absolute;
+		left: 10%;
+		top: 43%;
+	}
+	#workIcon2{
+		width: 18%;
+		height: 13%;
+		position: absolute;
+		top: 34%;
+		left: -9%;
+	}
+	#workIcon3{
+		width: 18%;
+		height: 13%;
+		position: absolute;
+		top: 66.5%;
+		left: -9%;
+	}
+	#workTitle3{
+		position: absolute;
+		left: 10%;
+		color: #b4326c;
+		top: 71%;
+		text-align: right;
+	}
+	#workPeriod3{
+		position: absolute;
+		left: 10%;
+		top: 76%;
+	}
+
+
+	#column2Exp{
+		width: 75%;
+	}
+	#workCompany1{
+		position: absolute;
+		top: 30%;
+		left: 17.5%;
+		color: #b4326c;
+	}
+	#workDesc1{
+		position: absolute;
+		left: 17.5%;
+		top: 33%;
+	}
+
+	#workCompany2{
+		position: absolute;
+		top: 56%;
+		left: 17.5%;
+		color: #b4326c;
+	}
+	#workDesc2{
+		position: absolute;
+		top: 59%;
+		left: 17.5%;
+	}
+
+	#workCompany3{
+		position: absolute;
+		top: 80%;
+		left: 17.5%;
+		color: #b4326c;
+	}
+	#workDesc3{
+		position: absolute;
+		top: 83%;
+		left: 17.5%;
+	}
+
+	.card{
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+		width: 100%;
+	  position: absolute;
+		margin:17px;
+	}
+	#projectsInfo{
+		height: 125%;
+		width: 100%;
+		position: absolute;
+		top: 355%;
+	}
+}
+
+
+@media only screen and (min-width:766px){
+	#about{
+		top:9%;
+	}
+	#myinfo{
+		position: relative;
+		top: 15%;
+		text-align: center;
+	}
+	#column1{
+		top: 18%;
+		width: 50%;
+		text-align: left;
+	}
+	.profile{
+		position: relative;
+		left: 45%;
+	}
+	#column2{
+		top: 18%;
+		width: 45%;
+	}
+	#nameText{
+		position:absolute;
+		left: 45%;
+		top: 8%;
+	}
+	#emailText{
+		position: absolute;
+		left: 45%;
+		top: 27%;
+	}
+	#schoolText{
+		position: absolute;
+		left: 45%;
+		top: 46%;
+	}
+	#degreeText{
+		position: absolute;
+		left: 45%;
+		top: 65%;
+	}
+	#exp{
+		top:9%;
+	}
+	#expInfo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 201%;
+	}
+	#column1Exp{
+		width: 50%;
+		position: relative;
+		border-right-style: solid;
+		height: 75%;
+		top: 20%;
+		border-width: 2px;
+		border-color:#b4326c;
+		border-left-style: none;
+		left: 0%;
+		font-size: 100%;
+
+	}
+	#workTitle1{
+		position: absolute;
+    left: 45%;
+    color: #b4326c;
+    top: 4%;
+    text-align: right;
+    width: 50%;
+	}
+	#workPeriod1{
+		position: absolute;
+    left: 45%;
+    top: 8%;
+    width: 50%;
+    text-align: right;
+	}
+	#workIcon1{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		left: 93.7%;
+	}
+	#workTitle2{
+		position: absolute;
+    left: 45%;
+    color: #b4326c;
+    top: 38%;
+    text-align: right;
+	}
+	#workPeriod2{
+		position: absolute;
+    left: 45%;
+    top: 43%;
+    text-align: right;
+    width: 50%;
+	}
+	#workIcon2{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		top: 34%;
+		left: 93.7%;
+	}
+	#workIcon3{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		top: 66.5%;
+		left: 93.7%;
+	}
+	#workTitle3{
+		position: absolute;
+		left: 12%;
+		color: #b4326c;
+		top: 71%;
+		text-align: right;
+	}
+	#workPeriod3{
+		position: absolute;
+		left: 56%;
+		top: 76%;
+		text-align: right;
+	}
+
+
+	#column2Exp{
+		width: 50%;
+		float: right;
+	}
+	#workCompany1{
+		position: absolute;
+		top: 23%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc1{
+		position: absolute;
+		left: 52.5%;
+		top: 30%;
+	}
+
+	#workCompany2{
+		position: absolute;
+		top: 49%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc2{
+		position: absolute;
+		top: 56%;
+		left: 52.5%;
+	}
+
+	#workCompany3{
+		position: absolute;
+		top: 73%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc3{
+		position: absolute;
+		top: 76%;
+		left: 52.5%;
+	}
+	.card{
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+		width: 40%;
+	  position: absolute;
+		margin:17px;
+	}
+	#projectsInfo{
+		height: 125%;
+		width: 100%;
+		position: absolute;
+		top: 301%;
+	}
+}
+
+
+@media only screen and (min-width:992px){
+	#about{
+		top:9%;
+	}
+	#myinfo{
+		position: relative;
+		top: 15%;
+		text-align: center;
+	}
+	#column1{
+		top: 18%;
+	}
+	.profile{
+		position: relative;
+		left: 45%;
+	}
+	#nameText{
+		position:absolute;
+		left: 45%;
+		top: 8%;
+	}
+	#emailText{
+		position: absolute;
+		left: 45%;
+		top: 27%;
+	}
+	#schoolText{
+		position: absolute;
+		left: 45%;
+		top: 46%;
+	}
+	#degreeText{
+		position: absolute;
+		left: 45%;
+		top: 65%;
+	}
+	#exp{
+		top:9%;
+	}
+	#expInfo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 201%;
+	}
+	#column1Exp{
+		width: 50%;
+		position: relative;
+		border-right-style: solid;
+		height: 75%;
+		top: 20%;
+		border-width: 2px;
+		border-color:#b4326c;
+		border-left-style: none;
+		left: 0%;
+		font-size: 100%;
+
+	}
+	#workTitle1{
+		position: absolute;
+		left: 45%;
+		color: #b4326c;
+		top: 4%;
+		text-align: right;
+		width: 50%;
+	}
+	#workPeriod1{
+		position: absolute;
+		left: 45%;
+		top: 8%;
+		width: 50%;
+		text-align: right;
+	}
+	#workIcon1{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		left: 93.7%;
+	}
+	#workTitle2{
+		position: absolute;
+		left: 45%;
+		color: #b4326c;
+		top: 38%;
+		text-align: right;
+		width: 50%;
+	}
+	#workPeriod2{
+		position: absolute;
+		left: 45%;
+		top: 43%;
+		text-align: right;
+		width: 50%;
+	}
+	#workIcon2{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		top: 34%;
+		left: 93.7%;
+	}
+	#workIcon3{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		top: 66.5%;
+		left: 93.7%;
+	}
+	#workTitle3{
+		position: absolute;
+		left: 45%;
+		color: #b4326c;
+		top: 71%;
+		width: 50%;
+		text-align: right;
+	}
+	#workPeriod3{
+		position: absolute;
+		left: 45%;
+		top: 76%;
+		text-align: right;
+		width: 50%;
+	}
+	#column2Exp{
+		width: 50%;
+		float: right;
+	}
+	#workCompany1{
+		position: absolute;
+		top: 23%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc1{
+		position: absolute;
+		left: 52.5%;
+		top: 26%;
+	}
+
+	#workCompany2{
+		position: absolute;
+		top: 49%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc2{
+		position: absolute;
+		top: 52%;
+		left: 52.5%;
+	}
+
+	#workCompany3{
+		position: absolute;
+		top: 73%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc3{
+		position: absolute;
+		top: 76%;
+		left: 52.5%;
+	}
+	.card{
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+		width: 20%;
+	  position: absolute;
+		margin:17px;
+	}
+	#projectsInfo{
+		height: 125%;
+		width: 100%;
+		position: absolute;
+		top: 301%;
+	}
+}
+
+@media only screen and (min-width:1200px){
+	#about{
+		top:9%;
+	}
+	#myinfo{
+		position: relative;
+		top: 15%;
+		text-align: center;
+	}
+	#column1{
+		top: 18%;
+	}
+	#nameText{
+		position:absolute;
+		left: 45%;
+		top: 8%;
+	}
+	#emailText{
+		position: absolute;
+		left: 45%;
+		top: 27%;
+	}
+	#schoolText{
+		position: absolute;
+		left: 45%;
+		top: 46%;
+	}
+	#degreeText{
+		position: absolute;
+		left: 45%;
+		top: 65%;
+	}
+	#exp{
+		top:9%;
+	}
+	#expInfo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 201%;
+	}
+	#column1Exp{
+		width: 50%;
+		position: relative;
+		border-right-style: solid;
+		height: 75%;
+		top: 20%;
+		border-width: 2px;
+		border-color:#b4326c;
+		border-left-style: none;
+		left: 0%;
+		font-size: 100%;
+
+	}
+	#workTitle1{
+		position: absolute;
+		left: 45%;
+		color: #b4326c;
+		top: 4%;
+		text-align: right;
+		width: 50%;
+	}
+	#workPeriod1{
+		position: absolute;
+		left: 45%;
+		top: 8%;
+		width: 50%;
+		text-align: right;
+	}
+	#workIcon1{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		left: 93.7%;
+	}
+	#workTitle2{
+		position: absolute;
+		left: 45%;
+		color: #b4326c;
+		top: 38%;
+		text-align: right;
+		width: 50%;
+	}
+	#workPeriod2{
+		position: absolute;
+		left: 45%;
+		top: 43%;
+		text-align: right;
+		width: 50%;
+	}
+	#workIcon2{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		top: 34%;
+		left: 93.7%;
+	}
+	#workIcon3{
+		width: 13%;
+		height: 15%;
+		position: absolute;
+		top: 66.5%;
+		left: 93.7%;
+	}
+	#workTitle3{
+		position: absolute;
+		left: 45%;
+		color: #b4326c;
+		top: 71%;
+		width: 50%;
+		text-align: right;
+	}
+	#workPeriod3{
+		position: absolute;
+		left: 45%;
+		top: 76%;
+		text-align: right;
+		width: 50%;
+	}
+
+
+	#column2Exp{
+		width: 50%;
+		float: right;
+	}
+	#workCompany1{
+		position: absolute;
+		top: 23%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc1{
+		position: absolute;
+		left: 52.5%;
+		top: 26%;
+	}
+
+	#workCompany2{
+		position: absolute;
+		top: 49%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc2{
+		position: absolute;
+		top: 52%;
+		left: 52.5%;
+	}
+
+	#workCompany3{
+		position: absolute;
+		top: 73%;
+		left: 52.5%;
+		color: #b4326c;
+	}
+	#workDesc3{
+		position: absolute;
+		top: 76%;
+		left: 52.5%;
+	}
+	.card{
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+		width: 20%;
+	  position: absolute;
+		margin:17px;
+	}
+	#projectsInfo{
+		height: 125%;
+		width: 100%;
+		position: absolute;
+		top: 301%;
+	}
+}
+.skillType{
+	color: black;
+	font-size: 75%;
+}
+*/

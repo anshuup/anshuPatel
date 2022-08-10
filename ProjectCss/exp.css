@@ -1,0 +1,360 @@
+html{
+	scroll-behavior: smooth;
+	font-family: system-ui;
+}
+body{
+	margin:0px;
+}
+
+@media screen and (max-width: 300px) {
+	.menuList{
+		position: relative;
+		background-color: black;
+		height: 3em;
+		margin-left: 1%;
+		margin-right: 1%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	.menu{
+		display: none;
+	}
+	.bMenu{
+		font-size: 2.5em !important;
+    padding: 3px;
+    float: right;
+    color: white;
+		padding-right: 10px;
+	}
+	.bMenu:hover{
+		color: #e94f64;
+	}
+	#hamMenuHome{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		height: auto;
+		display: grid;
+		background-color: black;
+		align-content: space-evenly;
+		text-align: center;
+		display: none;
+	}
+	.menu1{
+		border-width: 0.2px;
+		text-decoration: none;
+		padding-top: 5px;
+		padding-bottom: 7px;
+		font-weight: 500;
+		color: white;
+		border-top-style: solid;
+		border-width: 1px;
+	}
+	.menu1:hover{
+		background-color: #ff6961;
+	}
+	#experienceMenu1{
+		background-color: #e5c453
+	}
+}
+@media screen and (min-width: 300px) {
+	.menuList{
+		position: relative;
+		background-color: black;
+		height: 3em;
+		margin-left: 1%;
+		margin-right: 1%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	.menu{
+		display: none;
+	}
+	.bMenu{
+		font-size: 2.5em !important;
+    padding: 3px;
+    float: right;
+    color: white;
+		padding-right: 10px;
+	}
+	.bMenu:hover{
+		color: #e94f64;
+	}
+	#hamMenuHome{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		height: auto;
+		display: grid;
+		background-color: black;
+		align-content: space-evenly;
+		text-align: center;
+		display: none;
+	}
+	.menu1{
+		border-width: 0.2px;
+		text-decoration: none;
+		padding-top: 5px;
+		padding-bottom: 7px;
+		font-weight: 500;
+		color: white;
+		border-top-style: solid;
+		border-width: 1px;
+	}
+	.menu1:hover{
+		background-color: #ff6961;
+	}
+	#experienceMenu1{
+		background-color: #e5c453
+	}
+}
+@media screen and (min-width: 600px) {
+	.menuList{
+		position: relative;
+		background-color: black;
+		height: 3em;
+		margin-left: 1%;
+		margin-right: 1%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	.menu{
+		display: none;
+	}
+	.bMenu{
+		font-size: 2.5em !important;
+    padding: 3px;
+    float: right;
+    color: white;
+		padding-right: 10px;
+	}
+	.bMenu:hover{
+		color: #e94f64;
+	}
+
+	#hamMenuHome{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		height: auto;
+		display: grid;
+		background-color: black;
+		align-content: space-evenly;
+		text-align: center;
+		display: none;
+	}
+	.menu1{
+		border-width: 0.2px;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-weight: 500;
+    color: white;
+		border-top-style: solid;
+		border-width: 1px;
+	}
+	.menu1:hover{
+		background-color: #ff6961;
+	}
+	#experienceMenu1{
+		background-color: #e5c453
+	}
+}
+@media screen and (min-width: 900px) {
+	.menuList{
+		position: relative;
+    background-color: black;
+    text-align: end;
+		padding-right: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	#homeMenu:hover{
+		color: #46bddf !important;
+		border-bottom-style: solid;
+	}
+	#experienceMenu:hover{
+		color: #52d273 !important;
+		border-bottom-style: solid;
+	}
+	#projectsMenu:hover{
+		color: #e57255 !important;
+		border-bottom-style: solid;
+	}
+	.menu{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		color:white;
+		padding: 0.7em;
+		transition: all 0.8s ease;
+	}
+	#hamMenuHome{
+		display: none !important;
+	}
+	.icon{
+		display: none;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.menuList{
+		position: relative;
+    background-color: black;
+    height: 3em;
+    text-align: end;
+		padding-right: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
+		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+    border-radius: 2px;
+	}
+	#homeMenu:hover{
+		color: #46bddf !important;
+		border-bottom-style: solid;
+	}
+	#experienceMenu:hover{
+		color: #52d273 !important;
+		border-bottom-style: solid;
+	}
+	#projectsMenu:hover{
+		color: #e57255 !important;
+		border-bottom-style: solid;
+	}
+	.menu{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		transition: all 0.8s ease;
+		color:white;
+		padding: 0.7em;
+	}
+	#hamMenuHome{
+		display: none !important;
+	}
+	.icon{
+		display: none;
+	}
+
+}
+
+#experienceList{
+	background-color: #212121;
+	height: auto;
+	margin-right: 1%;
+	margin-left: 1%;
+	width: 98%;
+	color: white;
+	box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
+	border-radius: 2px;
+	padding-bottom: 0.5em;
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+.timeline {
+/*  margin: 4em auto;*/
+  position: relative;
+/*  max-width: 46em;*/
+}
+.timeline:before{
+	background-color: black;
+	content: '';
+	margin-left: -1px;
+	position: absolute;
+	top: 0;
+	left: 4.49em;
+	width: 2px;
+	height: 100%;
+}
+.timeline-event {
+  position: relative;
+	list-style: none;
+}
+
+.timeline-event:hover #thumb0 {
+	box-shadow : inset 40em 0 0 0 #e5c453;
+}
+
+.timeline-event:hover #thumb1 {
+	box-shadow : inset 40em 0 0 0 #46bddf;
+}
+
+.timeline-event:hover #thumb2 {
+	box-shadow : inset 40em 0 0 0 #e94f64;
+}
+
+.timeline-event-copy {
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+	/*padding-left: 2em;
+	padding-right: 2em;*/
+	padding-bottom: 2em;
+	padding-top: 1.5em;
+}
+
+h3 {
+	font-size: 1.75em;
+	margin: 0px;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin: 0px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+p:not(.timeline-event-thumbnail) {
+	padding-bottom: 0px;
+	font-size: 0.8em;
+	color: lightgrey;
+	text-align: justify;
+}
+
+.timeline-event-icon {
+  transition : transform 0.2s ease-in;
+  transform : rotate(45deg);
+
+  background-color: #e94f64;
+  /*outline: 10px solid black;*/
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+#icon1{
+	background-color: #e5c453
+}
+#icon2{
+	background-color: #46bddf
+}
+#icon3{
+	background-color: #e94f64
+}
+
+
+.timeline-event-thumbnail {
+	transition : box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 0.75em;
+
+  background-color: black;
+  box-shadow : inset 0 0 0 0em #ef795a;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
+.workHead{
+	color:#e5c453;
+}
+.workLocHead{
+	color:darkgrey;
+}
