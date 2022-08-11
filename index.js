@@ -80,6 +80,8 @@ function addProjects(){
 											"Personal website to display more details about my self including projects and work experience <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/connect4-project'>Click here</a> for more details",
 											"Recommendation system based on various techniques to output choices based on user selecction <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/RecommenderSystem'>Click here</a> for more details"]
 	projectLinkArray = ["https://github.com/anshuup/connect4-project","https://github.com/anshuup/TicTacToeProject1","https://github.com/anshuup/Web-Crawling","https://github.com/anshuup/connect4-project","https://github.com/anshuup/RecommenderSystem"]
+	projectSkillsArray = [["HTML/CSS/JavaScript","Node.js","Pug","Exxpres","JSON Database"],["HTML/CSS/JavaScript","Node.js","Express","Rest API"],["JavaScript","RESTful Server","PageRank"],["HTML/CSS/JavaScript"],["User-based Recommendation", "Item-based Recommendation"]]
+
 
 	for(i=0;i<projectNameArray.length;i++){
 		let cardElem = document.createElement("div")
@@ -87,28 +89,52 @@ function addProjects(){
 		let containerElem = document.createElement("div")
 		let projHeaderElem = document.createElement("h5")
 		let paraElem = document.createElement("p")
+
 		let linkElem = document.createElement("a")
 
 		cardElem.className = "card"
 		projectsImageElem.src = projectImageSrcArray[i]
 		projectsImageElem.style.width = "100%"
-		projectsImageElem.style.height = "50%"
+		projectsImageElem.style.height = "40%"
 		containerElem.id = "container"+(i+1)
+
+
+		let webLink = document.createElement("a")
+		webLink.href="#"
+		webLink.innerHTML = "Website"
+		webLink.className = "cardLink"
+		webLink.style.color = "lightblue"
+
+		let gitLink = document.createElement("a")
+		gitLink.href="#"
+		gitLink.innerHTML = "GitHub"
+		gitLink.className = "cardLink"
+		gitLink.style.color = "lightgreen"
 
 		projHeaderElem.className = "projHeader"
 		projHeaderElem.innerHTML = projectNameArray[i]
 		paraElem.innerHTML =  projectDescArray[i]
+		paraElem.className = "projectDescPara"
+
 
 		linkElem.href = projectLinkArray[i]
 		linkElem.target = "_blank"
 		linkElem.style.textDecoration = "none"
 
+
 		document.getElementById("cardsList").appendChild(cardElem)
 		cardElem.appendChild(projectsImageElem)
 		cardElem.appendChild(containerElem)
+		for(j=0;j<projectSkillsArray[i].length;j++){
+			let buttonElem = document.createElement("button")
+			buttonElem.className = "button"
+			buttonElem.innerHTML = projectSkillsArray[i][j]
+			containerElem.appendChild(buttonElem)
+		}
 		containerElem.appendChild(projHeaderElem)
 		containerElem.appendChild(paraElem)
-
+		containerElem.appendChild(webLink)
+		containerElem.appendChild(gitLink)
 	}
 }
 function myFunction(pageType){
