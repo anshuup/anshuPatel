@@ -74,12 +74,14 @@ function addProjects(){
 
 	projectNameArray = ["Connect 4", "Tic Tac Toe", "Web Crawling", "Personal Website","Recommender System"]
 	projectImageSrcArray = ["./ProjectImages/Connect4Img.PNG","./ProjectImages/TicTacToeImg.PNG","./ProjectImages/webCrawl.png","./ProjectImages/personalWeb.png","./ProjectImages/recommenderSystem.PNG"]
-	projectDescArray = ["A web application that allows users to play the game Connect4 with other users of the application. <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/connect4-project'>Click here</a> for more details",
-											"A web application that allows users to play the game TicTacToe game with computer as opponent and other users <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/TicTacToeProject1'>Click here</a> for more details",
-											"A simple web crawler that was created by visiting incoming and outgoing link of the various pages <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/Web-Crawling'>Click here</a> for more details",
-											"Personal website to display more details about my self including projects and work experience <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/connect4-project'>Click here</a> for more details",
-											"Recommendation system based on various techniques to output choices based on user selecction <a target='_blank' style='text-decoration:none' href='https://github.com/anshuup/RecommenderSystem'>Click here</a> for more details"]
-	projectLinkArray = ["https://github.com/anshuup/connect4-project","https://github.com/anshuup/TicTacToeProject1","https://github.com/anshuup/Web-Crawling","https://github.com/anshuup/connect4-project","https://github.com/anshuup/RecommenderSystem"]
+	projectDescArray = ["A web application that allows users to play the game Connect4 with other users of the application",
+											"A web application that allows users to play the game TicTacToe game with computer as opponent and other users ",
+											"A simple web crawler that was created by visiting incoming and outgoing link of the various pages",
+											"Personal website to display more details about my self including projects and work experience",
+											"Recommendation system based on various techniques to output choices based on user selecction "]
+	projectLinkArray = ["https://github.com/anshuup/connect4-project","https://github.com/anshuup/TicTacToeProject1","https://github.com/anshuup/Web-Crawling","https://github.com/anshuup/anshuup.github.io","https://github.com/anshuup/RecommenderSystem"]
+	projectWebArray = ["https://connect4-gamex.herokuapp.com/","http://tic-tac-toe-gamex.herokuapp.com/","https://github.com/anshuup/Web-Crawling","https://anshuup.github.io/","https://github.com/anshuup/RecommenderSystem"]
+
 	projectSkillsArray = [["HTML/CSS/JavaScript","Node.js","Pug","Exxpres","JSON Database"],["HTML/CSS/JavaScript","Node.js","Express","Rest API"],["JavaScript","RESTful Server","PageRank"],["HTML/CSS/JavaScript"],["User-based Recommendation", "Item-based Recommendation"]]
 
 
@@ -100,16 +102,20 @@ function addProjects(){
 
 
 		let webLink = document.createElement("a")
-		webLink.href="#"
+		webLink.href=projectWebArray[i]
 		webLink.innerHTML = "Website"
 		webLink.className = "cardLink"
 		webLink.style.color = "lightblue"
+		webLink.target = "_blank"
+
 
 		let gitLink = document.createElement("a")
 		gitLink.href="#"
 		gitLink.innerHTML = "GitHub"
 		gitLink.className = "cardLink"
 		gitLink.style.color = "lightgreen"
+		gitLink.href = projectLinkArray[i]
+		gitLink.target = "_blank"
 
 		projHeaderElem.className = "projHeader"
 		projHeaderElem.innerHTML = projectNameArray[i]
