@@ -58,7 +58,7 @@ body{
 	#name{
 		color: #52d273;
 		text-align: center;
-		font-size: 7vw;
+		font-size: 10vw;
 		margin: 0px;
 		font-weight: 500;
 	}
@@ -70,7 +70,7 @@ body{
 	}
 	#locInfo{
 		text-align: center;
-		font-size: 3vw;
+		font-size: 4.5vw;
 	}
 
 	.workIcon{
@@ -81,7 +81,7 @@ body{
 	}
 	#workInfo{
 		text-align: center;
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 
 
@@ -99,10 +99,10 @@ body{
 	}
 	#personalInfo{
 		text-align: center;
-		font-size: 3vw;
+		font-size: 4vw;
 		color: white;
 		position: relative;
-		top: 4vh;
+		top: 2vh;
 	}
 	#backImage{
 		position: relative;
@@ -117,6 +117,7 @@ body{
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		width: 100%;
 	}
 	.iconLink{
 		color: white;
@@ -243,7 +244,7 @@ body{
 	#name{
 		color: #52d273;
 		text-align: center;
-		font-size: 7vw;
+		font-size: 10vw;
 		margin: 0px;
 		font-weight: 500;
 	}
@@ -255,7 +256,7 @@ body{
 	}
 	#locInfo{
 		text-align: center;
-		font-size: 3vw;
+		font-size: 4.5vw;
 	}
 
 	.workIcon{
@@ -266,7 +267,7 @@ body{
 	}
 	#workInfo{
 		text-align: center;
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 
 
@@ -288,10 +289,10 @@ body{
 	}
 	#personalInfo{
 		text-align: center;
-		font-size: 3vw;
+		font-size: 4vw;
 		color: white;
 		position: relative;
-		top: 4vh;
+		top: 2vh;
 	}
 	#backImage{
 		position: relative;
@@ -306,6 +307,7 @@ body{
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		width: 100%;
 	}
 	.iconLink{
 		color: white;
