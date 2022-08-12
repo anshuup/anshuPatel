@@ -97,9 +97,13 @@ function addProjects(){
 		cardElem.className = "card"
 		projectsImageElem.src = projectImageSrcArray[i]
 		projectsImageElem.style.width = "100%"
-		projectsImageElem.style.height = "40%"
+		projectsImageElem.style.height = "185px"
+		projectsImageElem.style.marginBottom = "-4px"
+		projectsImageElem.style.backgroundColor = "#da6c53"
 		containerElem.id = "container"+(i+1)
 
+		let linkDivElem = document.createElement("div")
+		linkDivElem.className = "linkDiv"
 
 		let webLink = document.createElement("a")
 		webLink.href=projectWebArray[i]
@@ -117,11 +121,21 @@ function addProjects(){
 		gitLink.href = projectLinkArray[i]
 		gitLink.target = "_blank"
 
+		linkDivElem.appendChild(webLink)
+		linkDivElem.appendChild(gitLink)
+		linkDivElem.style.height = "35px"
+
+		let projectInfoElem = document.createElement("div")
+		projectInfoElem.className = "projData"
+
 		projHeaderElem.className = "projHeader"
 		projHeaderElem.innerHTML = projectNameArray[i]
 		paraElem.innerHTML =  projectDescArray[i]
 		paraElem.className = "projectDescPara"
 
+		projectInfoElem.style.minHeight = "145px"
+		projectInfoElem.appendChild(projHeaderElem)
+		projectInfoElem.appendChild(paraElem)
 
 		linkElem.href = projectLinkArray[i]
 		linkElem.target = "_blank"
@@ -131,16 +145,20 @@ function addProjects(){
 		document.getElementById("cardsList").appendChild(cardElem)
 		cardElem.appendChild(projectsImageElem)
 		cardElem.appendChild(containerElem)
+
+		let buttonContainerElem = document.createElement("div")
+		buttonContainerElem.className = "buttonContainer"
+		buttonContainerElem.style.minHeight = "60px"
+
 		for(j=0;j<projectSkillsArray[i].length;j++){
 			let buttonElem = document.createElement("button")
 			buttonElem.className = "button"
 			buttonElem.innerHTML = projectSkillsArray[i][j]
-			containerElem.appendChild(buttonElem)
+			buttonContainerElem.appendChild(buttonElem)
 		}
-		containerElem.appendChild(projHeaderElem)
-		containerElem.appendChild(paraElem)
-		containerElem.appendChild(webLink)
-		containerElem.appendChild(gitLink)
+		containerElem.appendChild(buttonContainerElem)
+		containerElem.appendChild(projectInfoElem)
+		containerElem.appendChild(linkDivElem)
 	}
 }
 function myFunction(pageType){
