@@ -124,14 +124,19 @@ function addProjects(){
 		linkDivElem.appendChild(webLink)
 		linkDivElem.appendChild(gitLink)
 		linkDivElem.style.height = "35px"
+		linkDivElem.style.textAlign = "center"
 
 		let projectInfoElem = document.createElement("div")
 		projectInfoElem.className = "projData"
 
 		projHeaderElem.className = "projHeader"
 		projHeaderElem.innerHTML = projectNameArray[i]
+		projHeaderElem.style.textAlign = "center"
+
+
 		paraElem.innerHTML =  projectDescArray[i]
 		paraElem.className = "projectDescPara"
+		paraElem.style.textAlign = "center"
 
 		projectInfoElem.style.minHeight = "145px"
 		projectInfoElem.appendChild(projHeaderElem)
@@ -149,6 +154,7 @@ function addProjects(){
 		let buttonContainerElem = document.createElement("div")
 		buttonContainerElem.className = "buttonContainer"
 		buttonContainerElem.style.minHeight = "60px"
+		buttonContainerElem.style.textAlign = "center"
 
 		for(j=0;j<projectSkillsArray[i].length;j++){
 			let buttonElem = document.createElement("button")

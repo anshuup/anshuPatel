@@ -189,7 +189,7 @@ body{
     background-color: #212121;
     text-align: end;
 		padding-right: 10%;
-		padding-left: 1%;
+		padding-left: 5%;
 		margin-left: 0%;
 		margin-right: 0%;
 		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
@@ -236,7 +236,7 @@ body{
     height: 3em;
     text-align: end;
 		padding-right: 10%;
-		padding-left: 1%;
+		padding-left: 5%;
 		margin-left: 0%;
 		margin-right: 0%;
 		box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
@@ -282,9 +282,9 @@ body{
 #experienceList{
 	background-color: #212121;
 	height: auto;
-	margin-right: 1%;
-	margin-left: 1%;
-	width: 98%;
+	margin-right: 5%;
+	margin-left: 5%;
+	width: 90%;
 	color: white;
 	box-shadow: 0px 0px 13px -3px rgb(0 0 0 / 87%);
 	border-radius: 2px;
