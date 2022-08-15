@@ -312,6 +312,7 @@ body{
 	}
 	.iconLink{
 		color: white;
+		text-decoration: none;
 	}
 	#linkedinIconLink{
 		color:#46bddf;
@@ -506,6 +507,7 @@ body{
 	}
 	.iconLink{
 		color: white;
+		text-decoration: none;
 	}
 	#linkedinIconLink{
 		color:#46bddf;
@@ -597,6 +599,8 @@ body{
     padding-top: 0.2em;
     padding-left: 0.8em;
 	}
+
+
 }
 @media screen and (min-width: 900px) {
 	.menuList{
@@ -715,6 +719,7 @@ body{
 	}
 	.iconLink{
 		color: white;
+		text-decoration: none;
 	}
 	#linkedinIconLink{
 		color:#46bddf;
@@ -898,10 +903,12 @@ body{
 	}
 	#linkedinIconLink{
 		color:#46bddf;
+		text-decoration: none;
 	}
-	#linkedinIconLink:hover{
+	#linkedinIconLink:hover {
 		color:white;
 	}
+
 	#gitHubIconLink{
 		color:#52d273;
 	}
@@ -961,6 +968,7 @@ body{
     padding-top: 0.2em;
     padding-left: 0.8em;
 	}
+
 
 /*
 	#toolTipText {

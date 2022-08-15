@@ -19,9 +19,8 @@ function highLightProjects(){
 }
 
 function populateSkills(){
-	let skills = ["HTML/CSS/JavaScript","Node.js","Express","Rest API","Pug","JSON Database","MongoDB","Mongoose","C","C++","Java","Python","SQL",
-								"PostgreSQL","R","Minitab","SAS","M365","VBA","Batch Scripting"]
-	let backColor = ["#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255"]
+	let skills = [ "HTML/CSS/JavaScript", "Node.js", "Express", "Rest API", "Pug", "JSON Database", "MongoDB", "Mongoose", "C", "C++", "Python", "Java", "SQL", "PostgreSQL", "R", "Minitab", "SAS", "Microsoft 365", "Microsoft Power Platform", "MS Office", "VBA Script", "Batch Files", "Linux", "ShareGate", "SharePoint Designer","PointFire 365"]
+	let backColor = ["#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453"]
 
 	for(i=0;i<skills.length;i++){
 		let buttonElem = document.createElement("button")
@@ -193,9 +192,9 @@ function populateWorkExp(){
 	workPos = ["Programmer", "SharePoint/M365 Junior Analyst", "Co-Op Developmental Student"]
 	workLocation = ["Canadian Food Inspection Agency (CFIA) - Remote", "Canadian Food Inspection Agency (CFIA) - Remote", "Ontario Power Generation - Pickering, ON"]
 	workPeriod = ["June 2022 - Present", "May 2021 - June 2021", "Jan 2020 - Aug 2020"]
-	workTaskList = [["Developed a program using <strong style='color:#e5c453'> Rest API </strong> and <strong style='color:#e5c453'> JSOM </strong>  to retrieve the information about the sites that uses the <strong style='color:#e5c453'> term store </strong> and which <strong style='color:#e5c453'>  term set </strong> and <strong style='color:#e5c453'>  term group </strong> are being used",
-							 "Developed <strong style='color:#e5c453'>  PowerApps </strong> to <strong style='color:#e5c453'>  automate </strong> team creation, this involved updating user about the request they have submitted, sending approve/reject email to the specified user, and creating team for the user based on the approve/reject decision",
-						 		"Worked with team member to develop the <strong style='color:#e5c453'> PowerShell script </strong> to retrieve the Microsoft teams information that are inactive for specified period of time"],
+	workTaskList = [["Manage a variety of <strong style='color:#e5c453'> SharePoint sites </strong>, including workflows and custom scripts, and troubleshoot site issues",
+							 "Utilize<strong style='color:#e5c453'> ShareGate </strong> to <strong style='color:#e5c453'> migrate </strong> SharePoint site contents from SharePoint on-premises to SharePoint Online, as well as troubleshoot challenges that arise during the migration of sites and their content",
+						 		"Working to deploy the <strong style='color:#e5c453'> PointFire </strong> tool throughout the organization's sites and simultaneously updating all of the organization's sites with the PointFire tool","Work on <strong style='color:#e5c453'> responding ticket queries </strong> including difficulties that users encounter inside <strong style='color:#e5c453'> PowerApps-created apps </strong>, submitting forms through the <strong style='color:#e5c453'> SharePoint site </strong>, and any other issue that users encounter with  <strong style='color:#e5c453'>Microsoft 365</strong>"],
 								["Developed a program using <strong style='color:#46bddf'> Rest API </strong> and <strong style='color:#46bddf'> JSOM </strong>  to retrieve the information about the sites that uses the <strong style='color:#46bddf'> term store </strong> and which <strong style='color:#46bddf'>  term set </strong> and <strong style='color:#46bddf'>  term group </strong> are being used",
 								"Developed <strong style='color:#46bddf'>  PowerApps </strong> to <strong style='color:#46bddf'>  automate </strong> team creation, this involved updating user about the request they have submitted, sending approve/reject email to the specified user, and creating team for the user based on the approve/reject decision",
 								"Worked with team member to develop the <strong style='color:#46bddf'> PowerShell script </strong> to retrieve the Microsoft teams information that are inactive for specified period of time"],
