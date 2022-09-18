@@ -79,7 +79,7 @@ function addProjects(){
 											"Personal website to display more details about my self including projects and work experience",
 											"Recommendation system based on various techniques to output choices based on user selecction "]
 	projectLinkArray = ["https://github.com/anshuup/connect4-project","https://github.com/anshuup/TicTacToeProject1","https://github.com/anshuup/Web-Crawling","https://github.com/anshuup/anshuup.github.io","https://github.com/anshuup/RecommenderSystem"]
-	projectWebArray = ["https://connect4-gamex.herokuapp.com/","http://tic-tac-toe-gamex.herokuapp.com/","https://github.com/anshuup/Web-Crawling","https://anshuup.github.io/","https://github.com/anshuup/RecommenderSystem"]
+	projectWebArray = ["https://connect-four-game-online.herokuapp.com/","http://tic-tac-toe-gamex.herokuapp.com/","https://github.com/anshuup/Web-Crawling","https://anshuup.github.io/","https://github.com/anshuup/RecommenderSystem"]
 
 	projectSkillsArray = [["HTML/CSS/JavaScript","Node.js","Pug","Exxpres","JSON Database"],["HTML/CSS/JavaScript","Node.js","Express","Rest API"],["JavaScript","RESTful Server","PageRank"],["HTML/CSS/JavaScript"],["User-based Recommendation", "Item-based Recommendation"]]
 
