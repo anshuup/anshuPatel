@@ -324,7 +324,9 @@ body{
 .timeline-event:hover #thumb2 {
 	box-shadow : inset 40em 0 0 0 #e94f64;
 }
-
+.timeline-event:hover #thumb3 {
+	box-shadow : inset 40em 0 0 0 #e94f64;
+}
 .timeline-event-copy {
   position: relative;
   top: -1.875em;
