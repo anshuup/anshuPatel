@@ -20,7 +20,7 @@ function highLightProjects(){
 
 function populateSkills(){
 	let skills = ["Azure DevOps", "Databricks", "MS SQL Server Studio", "Jira", "Erwin Data Modeler", "HTML/CSS/JavaScript", "Node.js", "Express", "Rest API", "Pug", "JSON Database", "MongoDB", "Mongoose", "C", "C++", "Python", "Java", "SQL", "PostgreSQL", "R", "Minitab", "SAS", "Microsoft 365", "Microsoft Power Platform", "MS Office", "VBA Script", "Batch Files", "Linux", "ShareGate", "SharePoint Designer","PointFire 365"]
-	let backColor = ["#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453"]
+	let backColor = ["#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453"]
 
 	for(i=0;i<skills.length;i++){
 		let buttonElem = document.createElement("button")
