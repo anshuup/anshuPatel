@@ -19,7 +19,7 @@ function highLightProjects(){
 }
 
 function populateSkills(){
-	let skills = [ "HTML/CSS/JavaScript", "Node.js", "Express", "Rest API", "Pug", "JSON Database", "MongoDB", "Mongoose", "C", "C++", "Python", "Java", "SQL", "PostgreSQL", "R", "Minitab", "SAS", "Microsoft 365", "Microsoft Power Platform", "MS Office", "VBA Script", "Batch Files", "Linux", "ShareGate", "SharePoint Designer","PointFire 365"]
+	let skills = ["Azure DevOps", "Databricks", "MS SQL Server Studio", "Jira", "Erwin Data Modeler", "HTML/CSS/JavaScript", "Node.js", "Express", "Rest API", "Pug", "JSON Database", "MongoDB", "Mongoose", "C", "C++", "Python", "Java", "SQL", "PostgreSQL", "R", "Minitab", "SAS", "Microsoft 365", "Microsoft Power Platform", "MS Office", "VBA Script", "Batch Files", "Linux", "ShareGate", "SharePoint Designer","PointFire 365"]
 	let backColor = ["#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453","#46bddf","#52d273","#e94f64","#e57255","#e5c453"]
 
 	for(i=0;i<skills.length;i++){
@@ -189,10 +189,11 @@ function typeWriter() {
 }
 
 function populateWorkExp(){
-	workPos = ["Programmer", "SharePoint/M365 Junior Analyst", "Co-Op Developmental Student"]
-	workLocation = ["Canadian Food Inspection Agency (CFIA) - Remote", "Canadian Food Inspection Agency (CFIA) - Remote", "Ontario Power Generation - Pickering, ON"]
-	workPeriod = ["June 2022 - Present", "May 2021 - June 2021", "Jan 2020 - Aug 2020"]
-	workTaskList = [["Manage a variety of <strong style='color:#e5c453'> SharePoint sites </strong>, including workflows and custom scripts, and troubleshoot site issues",
+	workPos = ["IT Technician", "Programmer", "SharePoint/M365 Junior Analyst", "Co-Op Developmental Student"]
+	workLocation = ["Canada Border Services Agency", "Canadian Food Inspection Agency (CFIA) - Remote", "Canadian Food Inspection Agency (CFIA) - Remote", "Ontario Power Generation - Pickering, ON"]
+	workPeriod = ["January 2024 - Present", "June 2022 - January 2024", "May 2021 - June 2021", "Jan 2020 - Aug 2020"]
+	workTaskList = [["Created <strong style='color:#e5c453'>technical documentation</strong> to provide the detailed guide on performing <strong style='color:#e5c453'>Databricks</strong> catalog testing.", "Utilized <strong style='color:#e5c453'>MS SQL Server Studio</strong> and <strong style='color:#e5c453'>SQL queries</strong> to perform <strong style='color:#e5c453'>data profiling</strong> on the provided dataset.","Worked with <strong style='color:#e5c453'>Erwin Data Modeler</strong> to create and analyze the existing <strong style='color:#e5c453'>data models</strong> to confirm the connectivity between the given model and datasets."
+]["Manage a variety of <strong style='color:#e5c453'> SharePoint sites </strong>, including workflows and custom scripts, and troubleshoot site issues",
 							 "Utilize<strong style='color:#e5c453'> ShareGate </strong> to <strong style='color:#e5c453'> migrate </strong> SharePoint site contents from SharePoint on-premises to SharePoint Online, as well as troubleshoot challenges that arise during the migration of sites and their content",
 						 		"Working to deploy the <strong style='color:#e5c453'> PointFire </strong> tool throughout the organization's sites and simultaneously updating all of the organization's sites with the PointFire tool","Work on <strong style='color:#e5c453'> responding ticket queries </strong> including difficulties that users encounter inside <strong style='color:#e5c453'> PowerApps-created apps </strong>, submitting forms through the <strong style='color:#e5c453'> SharePoint site </strong>, and any other issue that users encounter with  <strong style='color:#e5c453'>Microsoft 365</strong>"],
 								["Developed a program using <strong style='color:#46bddf'> Rest API </strong> and <strong style='color:#46bddf'> JSOM </strong>  to retrieve the information about the sites that uses the <strong style='color:#46bddf'> term store </strong> and which <strong style='color:#46bddf'>  term set </strong> and <strong style='color:#46bddf'>  term group </strong> are being used",
